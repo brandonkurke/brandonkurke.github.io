@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/Contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="nav-bar">
+      <span class="nav-bar__logo"><img src="BullLogo.svg"></span>
+      <nav class="nav-bar__nav">
+        <ul>
+          <li><a href="index.html" title="" class="current">Home</a></li>
+          <li><a href="Blog.html" title="">Blog</a></li>
+          <li><a href="Positions.html" title="">Positions</a></li>
+          <li><a href="Contact.html" title="">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-bar__search-btn" title="Szukaj"></button>
+      <button class="nav-bar__menu-btn" title="Menu"><span></span></button>
+    </div>
+
+    <script>
+      //toggle menu
+      document.querySelector(".nav-bar__menu-btn").addEventListener('click', function(e) {
+        e.stopPropagation();
+        document.querySelector(".nav-bar").classList.toggle('nav-bar_open');
+      }, false);
+
+      document.querySelector(".nav-bar__nav").addEventListener('click', function(e) {
+        e.stopPropagation();
+      }, false);
+
+      //close menu if is's not focused
+      document.addEventListener("click", function() {
+        document.querySelector(".nav-bar").classList.remove('nav-bar_open');
+      }, false);
+    </script>
+
+
+  <h1 class="name">Kurke | Development</h1>
+  <h2 class="username">Contact</h2>
+    <ul class="social-icons">
+      <center>
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+      </center>
+        </ul>
+      </div>
+
+
+  <div id="cd-port-wrapper">
+    <section class="port-sect" id="cd-sect-4">
+      <div id="map"></div>
+
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANyFJxSMfXQgwzYkqjOJUM5ZpiFzvecag&callback=initMap">
+      </script>
+
+      <div class="hover-anim" id="google-map-overlay">
+        <div class="cd-contact-form flex-parent cd-form-style">
+
+          <form id="cd-contact-left">
+            <input type="text" name="field1" placeholder="NAME" required/>
+            <input type="email" name="field2" placeholder="EMAIL" required/>
+          </form>
+
+          <form id="cd-contact-right">
+            <input type="url" name="field3" placeholder="URL (optional)" />
+            <textarea placeholder="MESSAGE" onkeyup="adjust_textarea(this)" required></textarea>
+            <input type="button" value="Send Message" class="hover-anim" />
+          </form>
+
+        </div>
+      </div>
+
+    </section>
+    <!--
+  <script type="text/javascript">
+  //auto expand textarea
+  function adjust_textarea(h) {
+      h.style.height = "20px";
+      h.style.height = (h.scrollHeight)+"px";
+  }
+  </script>
+  -->
+
+  </div>
+
+  <script>
+
+  // The following example creates a marker in Toronto, using a DROP
+  // animation. Clicking on the marker will toggle the animation between a BOUNCE
+  // animation and no animation.
+
+  var marker;
+
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: {
+       lat: 34.0522,
+       lng: -118.2437
+      },
+      scaleControl: false,
+      scrollwheel: false,
+      disableDoubleClickZoom: true
+    });
+
+    marker = new google.maps.Marker({
+      map: map,
+      draggable: true,
+      animation: google.maps.Animation.BOUNCE,
+      position: {
+        lat: 34.0522,
+        lng: -118.2437
+      }
+    });
+    marker.addListener('click', toggleBounce);
+  }
+  /* toggles the bounce but not needed as under overlay
+
+        function toggleBounce() {
+          if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+  */
+</script>
+
+
+<div class="footer">
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>Kurke | Development</h3>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Positions</a>
+        <a href="#">Contact</a>
+      </p>
+      <p class="footer-company-name">Kurke | Development &copy; 2017</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <p><span>6265 Dean Martin Dr</span> Las Vegas, Nevada 89122<br> Unites States</p>
+      </div>
+      <br>
+      <div>
+        <p>1(657) 253-6450</p>
+      </div>
+      <br>
+      <div>
+        <p><a href="mailto:support@company.com">brandonkurke22@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About Kurke | Development</span> Kurke | Development is a collection of entry level
+        software engineers and web developers offering a wide range of services
+        including Front-End Design, Back-End Engineering, Aerial Media services and more!
+      </p>
+      <ul class="social-icons">
+        <center>
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        </center>
+      </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
