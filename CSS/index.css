@@ -141,9 +141,13 @@ html,body {
   }
 }
 
+
+
+/* --- New Media Queries --- */
+
 @media only screen and (max-width: 1024px) {
   .nav-bar__nav ul  {
-    margin-top: .38in;
+    margin-top: .5in;
   }
 }
 
@@ -154,14 +158,13 @@ html,body {
   }
 }
 
-
-
-
 @media only screen and (max-width: 1024px) {
   .nav-bar__nav ul li:hover {
     background-color: rgb(159, 143, 104);
   }
 }
+
+/* --- New Media Queries --- */
 
 
 
