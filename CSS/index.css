@@ -499,7 +499,7 @@ a:hover {
 
 .front {
   transform: rotateY(0deg);
-  background: Black;
+  background: white;
   text-align: center;
   padding: 30px;
   box-sizing: border-box;
@@ -507,11 +507,11 @@ a:hover {
 }
 
 .back {
-  background: #9f8f68;
+  background: rgb(255, 236, 179);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   padding: 40px 15px;
-  color: #fff;
+  color: black;
   box-sizing: border-box;
   font-family: Raleway;
   font-weight: 300;
@@ -520,11 +520,11 @@ a:hover {
 .back h4 {
   font-family: Raleway;
   font-weight: 300;
-  color: white;
+  color: black;
 }
 
 .back h4:hover {
-  color: black;
+  color: rgb(153, 115, 0);
 }
 
 .card:hover .front {
@@ -542,7 +542,7 @@ a:hover {
 .front .contact {
   height: 120px;
   width: 120px;
-  border: 5px solid white;
+  border: 5px solid rgb(159, 143, 104);
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 10px;
@@ -552,18 +552,18 @@ a:hover {
 .front .name {
   display: inline-block;
   font-size: 18px;
-  color: #fff;
+  color: black;
   box-sizing: border-box;
 }
 
 .front .job {
-  color: #fff;
+  color: black;
   box-sizing: border-box;
 }
 
 .front hr {
   border: none;
-  color: white;
+  color: black;
   border: 1px solid;
   box-sizing: border-box;
 }
