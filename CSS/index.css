@@ -845,7 +845,7 @@ a:hover {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 650px) {
+@media (max-width: 300px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
