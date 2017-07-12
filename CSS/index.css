@@ -339,6 +339,7 @@ button {
 /* ---          BullLogo          --- */
 .logoContent img {
   position: relative;
+
   bottom: 1in;
   padding-bottom: 1in;
   margin: 0 10% 0 10%;
@@ -844,7 +845,7 @@ a:hover {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (max-width: 650px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
