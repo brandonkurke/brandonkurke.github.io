@@ -428,7 +428,8 @@ a:hover {
   color: #a3a3a3;
   font: inherit;
   box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
+  border: 1px solid white;
+  box-sizing: border-box;
   outline: 0;
   padding: 22px 18px;
 }
