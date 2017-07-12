@@ -298,8 +298,8 @@ button {
 /* ---          BullLogo          --- */
 .logoContent img {
   position: relative;
-  bottom: 2in;
-  padding-bottom: .5in;
+  bottom: 1in;
+  padding-bottom: 1in;
   margin: 0 10% 0 10%;
   border-bottom: 1px solid black;
 }
@@ -336,7 +336,7 @@ button {
 	background-color: white;
 	padding-top: 0%;
   color: black;
-  padding-bottom: .5in;
+  padding-bottom: 1.5in;
   margin: 0 10% 0 10%;
   border-bottom: 1px solid black;
 }
@@ -440,12 +440,12 @@ a:hover {
 #containerTeam {
   width: auto;
   height: auto;
-  margin-top: 0in;
+  margin-top: 1in;
   -webkit-perspective: 800px;
   perspective: 800px;
   text-align: center;
   box-sizing: border-box;
-  padding-bottom: .5in;
+  padding-bottom: 1.5in;
   margin: 0 10% 0 10%;
   border-bottom: 1px solid black;
 
@@ -459,6 +459,7 @@ a:hover {
   font-size: 32px;
   font-family: Raleway;
   font-weight: 300;
+  margin-top: 1in;
 }
 
 #containerTeam > hr {
@@ -608,6 +609,7 @@ a:hover {
 }
 
 .work h2 {
+  margin-top: 1in;
   font-size: 32px;
   font-family: Raleway;
   font-weight: 300;
@@ -617,7 +619,7 @@ a:hover {
 	display: block;
 	width: 100%;
 	height: auto;
-  margin-bottom: .5in;
+  margin-bottom: 1in;
 }
 
 .work-figure {
