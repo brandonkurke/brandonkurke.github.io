@@ -297,6 +297,8 @@ button {
 
 /* ---          BullLogo          --- */
 .logoContent img {
+  position: relative;
+  bottom: 2in;
   padding-bottom: .5in;
   margin: 0 10% 0 10%;
   border-bottom: 1px solid black;
@@ -320,7 +322,7 @@ button {
   font-family: Raleway;
   font-weight: 300;
   text-align: center;
-  color: white;
+  color: black;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
