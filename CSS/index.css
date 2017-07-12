@@ -494,6 +494,7 @@ a:hover {
   transition-timing-function: linear;
   border-radius: 0px;
   box-sizing: border-box;
+  box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .front {
