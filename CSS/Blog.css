@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: Raleway;
   -webkit-font-feature-settings: 'liga' 0;
           font-feature-settings: 'liga' 0;
   font-size: 100%;
@@ -48,7 +48,8 @@ body {
 
 h1, h2 {
   margin: 0;
-  font-family: "Space Mono", monospace;
+  font-family: Raleway;
+  font-weight: 300;
 }
 
 @media (min-width: 54em) {
@@ -119,7 +120,7 @@ ul {
  * Letter Spacing
  */
 .tabs, .previews__container span, .preview__more, .card__more, .footer__archive {
-  font-family: "Space Mono", monospace;
+  font-family: Raleway;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
