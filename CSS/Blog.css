@@ -48,8 +48,7 @@ body {
 
 h1, h2 {
   margin: 0;
-  font-family: Raleway;
-  font-weight: 300;
+  font-family: "Space Mono", monospace;
 }
 
 @media (min-width: 54em) {
