@@ -235,6 +235,7 @@ section {
 }
 .tabs__item {
   cursor: pointer;
+  margin: 0 .5in 0 0;
 }
 .tabs__item:not(.active) {
   position: relative;
