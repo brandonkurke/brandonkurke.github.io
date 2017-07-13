@@ -10,6 +10,7 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    background-color: white;
 }
 
 
@@ -24,7 +25,7 @@ html,body {
   display: block;
   display-left: auto;
   display-right: auto;
-  background-color: white;
+  background-color: black;
   margin: -10px -10px 40px -10px;
   padding: 100px 0px 75px 0px;
   z-index: -1;
@@ -33,7 +34,7 @@ html,body {
 
 .header h1 {
   font-weight: lighter;
-  color: black;
+  color: white;
   font-size: 48px;
 }
 
@@ -94,7 +95,7 @@ html,body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  background-color: black;
 
 }
 
@@ -186,7 +187,7 @@ html,body {
   left: 24px;
   display: inline-block;
   vertical-align: middle;
-  color: white;
+  color: black;
   font-family: Raleway;
   font-size: 16px;
 }
@@ -245,7 +246,7 @@ html,body {
   display: block;
   left: 50%;
   top: 50%;
-  background-color: black;
+  background-color: white;
   height: 3px;
   width: 20px;
   -webkit-transform: translate(-50%, -50%) translateZ(0);
@@ -282,13 +283,13 @@ nav a {
   display: inline-block;
   padding: 0 1.25em;
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: Raleway;
 }
 
 .nav-bar a:hover {
   text-decoration: none;
-  color: white;
+  color: black;
 
 }
 
@@ -337,14 +338,106 @@ button {
 /* ---          TopnavEnd          --- */
 
 /* ---          BullLogo          --- */
-.logoContent img {
-  position: relative;
+.photoGallery {
+margin-top: 1in;
 
-  bottom: 1in;
-  padding-bottom: 1in;
-  margin: 0 10% 0 10%;
-  border-bottom: 1px solid black;
 }
+
+.gallery, .gallery::before, .gallery::after,
+.gallery img,
+.gallery span {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+
+}
+
+.gallery img {
+  height: 3in;
+  width: 100%;
+  display: block;
+}
+
+.gallery {
+  width: 33%;
+  margin: 0 1px 1px 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+
+}
+.gallery:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+.gallery:hover span {
+  opacity: 1;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.gallery a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.gallery:hover::before {
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+          backdrop-filter: blur(10px) saturate(120%);
+}
+.gallery::after {
+  content: "";
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.35), 0 0px 4px rgba(0, 0, 0, 0.35) inset;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.gallery:hover::after {
+  opacity: 1;
+}
+
+.gallery span {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+  font: bold 14px sans-serif;
+}
+
+@media screen and (min-width: 760px) {
+  .gallery div {
+    width: calc(25% - 1px);
+  }
+}
+
+
 /* ---          BullLogoEnd          --- */
 
 
@@ -364,7 +457,7 @@ button {
   font-family: Raleway;
   font-weight: 300;
   text-align: center;
-  color: black;
+  color: white;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
@@ -376,7 +469,7 @@ button {
 /* ---          JoinSubscribe         --- */
 .join {
 	background-color: white;
-	padding-top: 0%;
+	padding-top: 1in;
   color: black;
   padding-bottom: 1.5in;
   margin: 0 10% 0 10%;
@@ -698,7 +791,7 @@ a:hover {
 
 
 .footer-distributed{
-	background-color: rgb(159, 143, 104);
+	background-color: black;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -725,7 +818,7 @@ a:hover {
 /* The company logo */
 
 .footer-distributed h3{
-	color:  black;
+	color:  white;
 	font-family: Raleway;
 	margin: 0;
 }
@@ -733,7 +826,7 @@ a:hover {
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  black;
+	color:  white;
 	padding: 0;
 }
 
@@ -746,7 +839,7 @@ a:hover {
 }
 
 .footer-distributed .footer-company-name{
-	color:  white;
+	color:  grey;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -760,7 +853,7 @@ a:hover {
 
 .footer-distributed .footer-center i{
 	background-color: transparent;
-	color: black;
+	color: white;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -780,7 +873,7 @@ a:hover {
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: black;
+	color: white;
 	vertical-align: middle;
 	margin:0;
   font-family: Raleway;
@@ -806,7 +899,7 @@ a:hover {
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  black;
+	color:  white;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -814,7 +907,7 @@ a:hover {
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  black;
+	color:  white;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -882,7 +975,7 @@ ul {
 }
 
 .social-icon {
-	color: black;
+	color: white;
 }
 
 ul.social-icons {
@@ -896,7 +989,7 @@ ul.social-icons {
 }
 
 .social-icons a {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
