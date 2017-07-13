@@ -475,9 +475,7 @@ ul.social-icons {
 
 
 
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
 
-@import url(//db.onlinewebfonts.com/c/b67dd0e7123c050baf059b5ce8ebc665?family=BrandonTextW01-Bold);
 
 h1, h2, h4, h5, h6 {
 font-family: Raleway;
@@ -491,12 +489,20 @@ font-family: Raleway;
 
 h4 {
 font-size: 17px;
+font-weight: 300;
 font-family: Raleway;
+}
+
+h4:hover {
+font-size: 17px;
+font-weight: 300;
+font-family: Raleway;
+color: red;
+
 }
 
 h3 {
 font-size: 22px;
-font-weight: 300;
 font-family: Raleway;
 
 }

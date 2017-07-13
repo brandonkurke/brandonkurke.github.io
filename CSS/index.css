@@ -698,14 +698,13 @@ a:hover {
 
 
 .footer-distributed{
-	background-color: black;
+	background-color: rgb(159, 143, 104);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
-	padding: 55px 50px;
+	padding: 50px 50px;
 	margin-top: 80px;
 }
 
@@ -720,12 +719,13 @@ a:hover {
 
 .footer-distributed .footer-left{
 	width: 40%;
+
 }
 
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #ffffff;
+	color:  black;
 	font-family: Raleway;
 	margin: 0;
 }
@@ -733,8 +733,7 @@ a:hover {
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
+	color:  black;
 	padding: 0;
 }
 
@@ -747,7 +746,7 @@ a:hover {
 }
 
 .footer-distributed .footer-company-name{
-	color:  #8f9296;
+	color:  white;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -781,7 +780,7 @@ a:hover {
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: black;
 	vertical-align: middle;
 	margin:0;
   font-family: Raleway;
@@ -793,7 +792,7 @@ a:hover {
 }
 
 .footer-distributed .footer-center p a{
-	color:  rgb(159, 143, 104);
+	color:  rgb(255, 236, 179);
 	text-decoration: none;;
   font-family: Raleway;
 }
@@ -807,7 +806,7 @@ a:hover {
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
+	color:  black;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -815,7 +814,7 @@ a:hover {
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
+	color:  black;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -845,7 +844,7 @@ a:hover {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 300px) {
+@media (max-width: 660px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
