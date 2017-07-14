@@ -69,7 +69,7 @@ button{display:inline-block;vertical-align:center;width:80px;height:48px;border:
 .gallery, .gallery::before, .gallery::after,
 .gallery img,
 .gallery span{-webkit-transition:all .2s;transition:all .2s;}
-.gallery img{height:3in;width:100%;display:block;}
+.gallery img{height:2in;width:100%;display:block;}
 .gallery{width:33%;margin:0 1px 1px 0;float:left;position:relative;overflow:hidden;margin:0px;padding:0px;}
 .gallery:hover img{-webkit-transform:scale(1.25);transform:scale(1.25);}
 .gallery:hover span{opacity:1;}
