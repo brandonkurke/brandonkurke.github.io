@@ -141,6 +141,9 @@ a:hover{color:#7f8ff4;}
 .footer-distributed .footer-center p a{color:rgb(255, 236, 179);text-decoration:none;;font-family:Raleway;}
 .footer-distributed .footer-right{width:20%;}
 .footer-distributed .footer-company-about{line-height:20px;color:white;font-size:13px;font-weight:normal;margin:0;}
+.footer-right ul li a{display:inline-block;width:100%;height:35px;color: white;text-decoration: none;font-family: Raleway;}
+.footer-right .facebookFoot a:hover{color: #3366cc;text-decoration: none;}
+.footer-right .instagramFoot a:hover{color: #cc3399;text-decoration: none;}
 .footer-distributed .footer-company-about span{display:block;color:white;font-size:14px;font-weight:bold;margin-bottom:20px;font-family:Raleway;}
 .footer-distributed .footer-icons{margin-top:25px;}
 .footer-distributed .footer-icons a{display:inline-block;width:100%;height:35px;cursor:pointer;background-color:#33383b;border-radius:2px;font-family:Raleway;font-size:20px;color:white;text-align:center;line-height:35px;margin-right:3px;margin-bottom:5px;}
