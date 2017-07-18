@@ -462,6 +462,34 @@ ul.social-icons {
 	background-color: #e25714;
 }
 
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: lighter;
+}
+
+
+
+
+
+.contactPhysical {
+  margin-bottom: 1in;
+  text-align: center;
+}
+
+.contactPhysical h2 {
+  color: white;
+  font-family: Raleway;
+  font-weight: lighter;
+}
+
+.contactPhysical li {
+  color: white;
+  display: inline;
+  font-family: Raleway;
+}
+
 
 
 
